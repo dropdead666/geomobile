@@ -60,3 +60,26 @@ function closeForm() {
     document.getElementById("myForm").style.display = "none";
 }
 
+function openAcc() {
+    document.getElementById("myAcc").style.display = "block";
+}
+
+function closeAcc() {
+    document.getElementById("myAcc").style.display = "none";
+}
+
+function openFriends() {
+    document.getElementById("myFriends").style.display = "block";
+}
+
+function closeFriends() {
+    document.getElementById("myFriends").style.display = "none";
+}
+
+function openStats() {
+    document.getElementById("myStats").style.display = "block";
+}
+
+function closeStats() {
+    document.getElementById("myStats").style.display = "none";
+}

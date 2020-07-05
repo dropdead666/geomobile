@@ -9,20 +9,53 @@
 
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">Профиль</a>
-    <a href="#">Друзья</a>
+    <a href="#" onclick="openAcc()">Профиль</a>
+    <a href="#" onclick="openFriends()">Друзья</a>
     <a href="#">Сообщения</a>
-    <a href="#">Статистика</a>
+    <a href="#" onclick="openStats()">Статистика</a>
     <a href="/logout">Выйти из профиля</a>
 </div>
 
- <div class="form-popup" id="myForm">
+<div class="form-popup" id="myForm">
   <form action="#" class="form-container">
     <h1>Оставить чекпоинт</h1>
     <label for="name"><b>Текст</b></label>
     <input type="text" placeholder="Напишите текст..." name="textmarker" required id="textmarker">
     <button type="submit" class="btn" onclick="addMarker()">Добавить</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+  </form>
+</div>
+
+<div class="form-popup" id="myAcc">
+  <form action="#" class="form-container">
+      <h1>Имя: user</h1>
+    <label for="name"><b>Почта: </b>therealloathing@gmail.com</label>
+    <button type="button" class="btn cancel" onclick="closeAcc()">Закрыть</button>
+  </form>
+</div>
+
+<div class="form-popup" id="myFriends">
+  <form action="#" class="form-container">
+      <h1>Друзья: 0/0</h1>
+    <button type="button" class="btn cancel" onclick="closeFriends()">Закрыть</button>
+  </form>
+</div>
+
+<div class="form-popup" id="myStats">
+  <form action="#" class="form-container">
+      <h1>Статистика</h1>
+      <b>Посещено городов: </b> 1 <br>
+      <b>Текущий город: </b> Казань <br>
+      <b>Вы прошли: </b> 7,2 км <br>
+      <b>Вы знаете город на: </b> 0,01% <br>
+      <b>Друзей в городе: </b> 0 <br>
+      <b>Чекпоинты в городе: </b> 0 <br>
+      <b>Чекпоинты друзей </b> 0/0 <br>
+      <br>
+      <br>
+      <b>Топ друзей: </b>  <br>
+      1. user 0,01% <b>(Вы)</b>
+    <button type="button" class="btn cancel" onclick="closeStats()">Закрыть</button>
   </form>
 </div>
 {% endblock %}
