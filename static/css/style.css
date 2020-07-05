@@ -34,10 +34,10 @@ body {
     border-radius: 50%;
     position: absolute;
     top:50%;
-    left:65%;
+    left:75%;
     z-index: 9999;
-    height: 100px;
-    width: 100px;
+    height: 65px;
+    width: 65px;
 }
 
 .sidenav {
