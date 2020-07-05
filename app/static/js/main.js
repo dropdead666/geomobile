@@ -1,7 +1,7 @@
 var mymap = L.map('map').setView([0, 0], 13);
+centerMap();
 markerUser =  L.marker([0, 0]).addTo(mymap);
 getLocation();
-
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -11,6 +11,14 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     zoomOffset: -1,
     accessToken: 'pk.eyJ1Ijoia2FieWthaWYiLCJhIjoiY2tjNWE0MWc0MGZzMjJ5bWdpZWtieHN3ZyJ9.L65F7UmuRusia6VZqQuymA'
 }).addTo(mymap);
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
 
 function getLocation() {
     if (navigator.geolocation) {
@@ -31,3 +39,11 @@ function centerMap() {
 function centerCamera(pos) {
     mymap.setView([pos.coords.latitude, pos.coords.longitude], 13);
 }
+
+var latlngs = [
+    [45.51, -122.68],
+    [37.77, -122.43],
+    [34.04, -118.2]
+];
+var polyline = L.polyline(latlngs, {color: 'red'}).addTo(map);
+map.fitBounds(polyline.getBounds());

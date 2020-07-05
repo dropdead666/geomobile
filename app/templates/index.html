@@ -2,6 +2,16 @@
 
 {% block content %}
 <div id="map">
-	....
+    <span style="font-size:30px;cursor:pointer;z-index: 9999; position: absolute; top: 5%; left: 10%;" onclick="openNav()">&#9776;</span>
+</div>
+<button id="center-button" onclick="centerMap()"></button>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Профиль</a>
+    <a href="#">Друзья</a>
+    <a href="#">Сообщения</a>
+    <a href="#">Статистика</a>
+    <a href="/logout">Выйти из профиля</a>
 </div>
 {% endblock %}
