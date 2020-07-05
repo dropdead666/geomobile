@@ -5,6 +5,7 @@
     <span id="gamb" style="font-size:30px;cursor:pointer;z-index: 9999; position: absolute; top: 15%; left: 5%;">&#9776;</span>
 </div>
 <button id="center-button" onclick="centerMap()"></button>
+<button id="marker-button" onclick="createMarker()"></button>
 
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -13,5 +14,15 @@
     <a href="#">Сообщения</a>
     <a href="#">Статистика</a>
     <a href="/logout">Выйти из профиля</a>
+</div>
+
+ <div class="form-popup" id="myForm">
+  <form action="#" class="form-container">
+    <h1>Оставить чекпоинт</h1>
+    <label for="name"><b>Текст</b></label>
+    <input type="text" placeholder="Напишите текст..." name="textmarker" required id="textmarker">
+    <button type="submit" class="btn" onclick="addMarker()">Добавить</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+  </form>
 </div>
 {% endblock %}

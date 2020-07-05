@@ -40,6 +40,17 @@ body {
     width: 65px;
 }
 
+#marker-button {
+    border-radius: 50%;
+    position: absolute;
+    top:30%;
+    left:75%;
+    z-index: 9999;
+    height: 65px;
+    width: 65px;
+    background-color: #fff;
+}
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -78,4 +89,71 @@ body {
 @media screen and (max-height: 480px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+.open-button {
+  background-color: #2196F3;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+.form-popup {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 99999;
+
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #1976D2;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.form-container .cancel {
+  background-color: #448AFF;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
 }

@@ -42,10 +42,11 @@ function centerCamera(pos) {
     mymap.setView([pos.coords.latitude, pos.coords.longitude], 13);
 }
 
-var latlngs = [
-    [45.51, -122.68],
-    [37.77, -122.43],
-    [34.04, -118.2]
-];
-var polyline = L.polyline(latlngs, {color: 'red'}).addTo(map);
-map.fitBounds(polyline.getBounds());
+function createMarker() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+
