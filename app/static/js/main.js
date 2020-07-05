@@ -24,7 +24,7 @@ function goLocation(pos) {
 
 function centerMap() {
     if (navigator.geolocation) {
-        navigator.geolocation.watchPosition(centerCamera);
+        navigator.geolocation.getCurrentPosition(centerCamera);
     }
 }
 
