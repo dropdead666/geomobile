@@ -12,13 +12,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'pk.eyJ1Ijoia2FieWthaWYiLCJhIjoiY2tjNWE0MWc0MGZzMjJ5bWdpZWtieHN3ZyJ9.L65F7UmuRusia6VZqQuymA'
 }).addTo(mymap);
 
-      var polylinePoints = [
-        [55.813734399999994, 49.0962944],
-        [55.8187482, 49.1136327],
-        [55.8188964, 49.1176078],
-      ];
 
-      var polyline = L.polyline(polylinePoints).addTo(mymap);
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -38,6 +32,14 @@ function getLocation() {
 
 function goLocation(pos) {
     markerUser.setLatLng([pos.coords.latitude, pos.coords.longitude]);
+          var polylinePoints = [
+        [pos.coords.latitude, pos.coords.longitude],
+        [55.813734399999994, 49.0962944],
+        [55.8187482, 49.1136327],
+        [55.8188964, 49.1176078],
+      ];
+
+      var polyline = L.polyline(polylinePoints).addTo(mymap);
 }
 
 function centerMap() {
