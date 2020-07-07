@@ -24,9 +24,18 @@ function closeNav() {
 
 document.getElementById ("gamb").addEventListener ("click", openNav, false);
 
+function error(err) {
+  console.warn('ERROR(' + err.code + '): ' + err.message);
+}
+
 function getLocation() {
+    var options = {
+    enableHighAccuracy: true,
+    timeout: 10000,
+    maximumAge: 0
+    };
     if (navigator.geolocation) {
-        navigator.geolocation.watchPosition(goLocation);
+        navigator.geolocation.watchPosition(goLocation, error, options);
     }
 }
 
