@@ -13,7 +13,7 @@ body {
 }
 
 #login {
-    width: 500px;
+    width: 400px;
     height: 210px;
     position: absolute;
     top: 50%;
@@ -22,7 +22,7 @@ body {
 }
 
 #register {
-    width: 500px;
+    width: 400px;
     height: 300px;
     position: absolute;
     top: 50%;
