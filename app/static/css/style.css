@@ -15,19 +15,13 @@ body {
 #login {
     width: 400px;
     height: 210px;
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    margin: -105px 0 0 -250px;
+
 }
 
 #register {
     width: 400px;
     height: 300px;
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    margin: -150px 0 0 -250px;
+
 }
 
 #center-button {
