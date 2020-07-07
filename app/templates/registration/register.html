@@ -8,19 +8,19 @@
     <form action="{% url 'register' %}" id="login-form" method="post">
         {% csrf_token %}
         <div class="register-username">
-            <input style="box-sizing:border-box; width: 400px; height: 60px;" name="username" type="text" class="form-control" placeholder="Логин" aria-describedby="basic-addon1" value="{{ username }}">
+            <input style="box-sizing:border-box; width: 300px; height: 60px;" name="username" type="text" class="form-control" placeholder="Логин" aria-describedby="basic-addon1" value="{{ username }}">
         </div>
         <div class="register-password">
-            <input style="box-sizing:border-box; width: 400px; height: 60px;" name="password1" type="password" class="form-control" placeholder="Пароль" aria-describedby="basic-addon1" value="{{ password1 }}">
+            <input style="box-sizing:border-box; width: 300px; height: 60px;" name="password1" type="password" class="form-control" placeholder="Пароль" aria-describedby="basic-addon1" value="{{ password1 }}">
         </div>
         <div class="register-password">
-            <input style="box-sizing:border-box; width: 400px; height: 60px;" name="password2" type="password" class="form-control" placeholder="Повторите пароль" aria-describedby="basic-addon1" value="{{ password2 }}">
+            <input style="box-sizing:border-box; width: 300px; height: 60px;" name="password2" type="password" class="form-control" placeholder="Повторите пароль" aria-describedby="basic-addon1" value="{{ password2 }}">
         </div>
         <div class="register-email">
-            <input style="box-sizing:border-box; width: 400px; height: 60px;" name="email" type="text" class="form-control" placeholder="email" aria-describedby="basic-addon1" value="{{ email }}">
+            <input style="box-sizing:border-box; width: 300px; height: 60px;" name="email" type="text" class="form-control" placeholder="email" aria-describedby="basic-addon1" value="{{ email }}">
         </div>
         <div class="register-submit">
-            <button style="width: 400px; height: 60px;" class="btn btn-primary btn-lg" type="submit">Регистрация</button>
+            <button style="width: 300px; height: 60px;" class="btn btn-primary btn-lg" type="submit">Регистрация</button>
         </div>
     </form>
     <p><a href="{% url 'login' %}">Вернуться на страницу входа</a></p>

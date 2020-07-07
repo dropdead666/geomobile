@@ -13,13 +13,14 @@ body {
 }
 
 #login {
-    width: 400px;
+    width: 300px;
     height: 210px;
-
+    position: relative;
+    top
 }
 
 #register {
-    width: 400px;
+    width: 300px;
     height: 300px;
 
 }
