@@ -14,7 +14,7 @@
             <button style="width: 400px; height: 70px;" class="btn btn-primary btn-lg" type="submit">Войти</button>
         </div>
     </form>
-    <p>Нет логина? <a href="{% url 'register' %}">Регистрация</a></p>
+    <p style="position: relative; left:100%;">Нет логина? <a href="{% url 'register' %}">Регистрация</a></p>
 </div>
 {% else %}
 <p>Вы уже вошли на сайт. </p><a href="{% url 'main' %}">Вернуться на сайт</a>

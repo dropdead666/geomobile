@@ -23,7 +23,7 @@
             <button style="width: 400px; height: 60px;" class="btn btn-primary btn-lg" type="submit">Регистрация</button>
         </div>
     </form>
-    <p><a href="{% url 'login' %}">Вернуться на страницу входа</a></p>
+    <p style="position: relative; left:100%;"><a href="{% url 'login' %}">Вернуться на страницу входа</a></p>
 </div>
 {% else %}
 <p>Вы уже вошли на сайт. </p><a href="{% url 'main' %}">Вернуться на сайт</a>
